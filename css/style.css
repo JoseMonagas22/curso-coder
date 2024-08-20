@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*!-----reset-----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Jost", sons-serif;
+    
+}
+
+/*!----------HEADER----------*/
+header{
+    height: 100vh;
+    background-image: url(../img/autos-drift.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.seccion-header{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10em 10em 10em 10em;
+
+}
+.nombre-empresa{
+    font-size: 50px;
+    color: white;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-left: 20px;
+}
+
+.eslogan-empresa{
+    font-size:60px ;
+    color: white;
+    width: 40%;
+    display: flex;
+    margin-left: 30px; 
+    grid-column: 2/5;
+}
+
+@media screen and (max-width: 991px){
+    .eslogan-empresa {
+        display: none;
+    }
+    header {
+        height: 80vh;
+    }
+}
+
+header nav ul{
+    list-style:none;
+
+}
+
+header nav ul li {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*!---------------Bienvenidos----------------*/
+
+.bienvenidos {
+    height: 400px;
+    background-image: url(../img/audi-a5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    
+
+
+}
+
+.titulo-bienvenidos {
+    padding: 10px;
+    margin-top: auto;
+    background-color: black
+    
+}
+.bienvenidos p{
+    font-size: 25px;
+   
+}
+
+@media screen and (max-width: 760px) {
+    .bienvenidos p{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 413px) {
+    .bienvenidos {
+        height: 300px;
+
+    }
+    .titulo-bienvenidos {
+        padding: 10px;
+    }
+    .bienvenidos p{
+        font-size: 15px;
+    }
+    
+}
+/*!--------------Nuestas Obras--------------------*/
+
+.nuestras-obras{
+    background-color: black;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    color: white;
+}
+
+.animacion-index {
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+
+.animacion-index ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 10s infinite alternate ease-in-out;
+
+}
+
+.animacion-index li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+
+.animacion-index img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+@media screen and (max-width: 590px){
+    .titulo{
+        font-size: 30px;
+        padding-top: 5px;
+    }
+}
+
+/*!-------Nuestro clientes---------------*/
+
+.nuestros-clientes {
+    background-color: black;
+    
+}
+
+.resena-cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resena-cliente img {
+    height: 600px;
+    margin: 40px;
+    border: 8px solid rgb(151, 5, 5);
+}
+.nuestros-clientes h2{
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.nuestros-clientes p{ 
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 400px;
+}
+@media screen and (max-width: 850px){
+    .resena-cliente {
+        display: flex;
+        flex-direction: column;
+    }
+    .resena-cliente img{
+        height: 400px;
+    }
+    .resena-cliente p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .nuestros-clientes h2{
+        font-size: 30px;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .resena-cliente img{
+        height: 250px;
+    }
+    .resena-cliente p{
+        font-size: 20px;
+        width: 300px;
+    }
+}
+/*!-------Video Index------*/
+.video {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.iframe-contenedor{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+
+.iframe-contenedor iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media screen and (max-width: 350px){
+    .iframe-contenedor {
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+    .iframe-contenedor iframe {
+        width: 300px;
+        height: 100%;
+    }
+}
+
+/*!------------------NOSOTROS-------------*/
+.nosotros{
+    background-color: black;
+    color: white;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+}
+
+.nosotros img {
+    height: 500px;
+    border: 8px solid red;
+    grid-column: 2/5;
+    grid-row: 2/5;
+}
+.nosotros h2{
+    font-size: 45px;
+    grid-column: 5/8;
+    grid-row: 2/3;
+}
+.nosotros p{
+    font-size: 20px;
+    grid-column: 6/10;
+    grid-row: 3/4;
+    height: auto;
+}
+.nosotros a {
+    display: block;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    grid-column: 7/9;
+    grid-row: 4;
+    width: 150px;
+    height: 40px;
+}
+
+.nosotros a:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 925px){
+    .nosotros {
+        height: 700px;
+    }
+    .nosotros img {
+        height: 400px;
+        margin-top: 80px;
+    }
+    .nosotros h2 {
+        font-size: 40px;
+    }
+    .nosotros p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 830px){
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros img {
+        margin-top: 0;
+        width: 300px;
+        height: 400px;
+
+    }
+    .nosotros h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 560px){
+    .nosotros img {
+        width: 250px;
+        height: 350px;
+    }
+    .nosotros h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .nosotros img {
+        height: 300px;
+    }
+    .nosotros h2{
+        font-size: 18px;
+        padding: 2px;
+    }
+}
+
+/*!----------------Proyectos-----------------*/
+.nuestros-proyectos {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.titulo-proyectos {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.honda-civic {
+    display: flex;
+    justify-content: space-around;
+}
+.texto-civic p{
+    width: 400px;
+    font-size: 20px;
+}
+
+.mazda-rx7 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto-rx7 p {
+    width: 400px;
+}
+
+/*!-------------RESEÑAS---------------*/
+
+.resenas-pages {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.resena-carlos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.texto-carlos p {
+    width: 300px;
+}
+/*!-----Footer----*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo-footer {
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 5px;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li {
+    margin: 0 10px;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociales a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.iconos-redes{
+    display: flex;
+}
+
+@media screen and (max-width: 520px){
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .redes-sociales {
+        display: flex;
+        flex-direction: column;
+    }
+    .iconos-redes{
+        display: flex;
+    }
+}
+/*!--------CONTACTOS------------*/
+
+.formulario {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.componentes-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px rgba(219, 16, 16, 0.738);
+    padding: 20px;
+}
+
+.componentes-formulario h2{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.componentes-formulario label{
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.boton-formulario{
+    margin-top: 8px;
+}
