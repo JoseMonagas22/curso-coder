@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+.nosotros a, .nuestros-proyectos .honda-civic a, .nuestros-proyectos .mazda-rx7 a {
+  text-decoration: none;
+  color: white; }
+
+/*!-----reset-----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Jost", sons-serif; }
+
+header {
+  height: 100vh;
+  background-image: url(../img/autos-drift.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  header nav div div ul li {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold; }
+  header .seccion-header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10em 10em 10em 10em; }
+    header .seccion-header h1 {
+      font-size: 50px;
+      color: white;
+      grid-column: 1/3;
+      grid-row: 1/2;
+      padding-left: 20px; }
+    header .seccion-header h2 {
+      font-size: 60px;
+      color: white;
+      width: 40%;
+      display: flex;
+      margin-left: 30px;
+      grid-column: 2/5; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+.bienvenidos {
+  height: 400px;
+  background-image: url(../img/audi-a5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px; }
+  .bienvenidos h2 {
+    padding: 10px;
+    background-color: black; }
+  .bienvenidos p {
+    font-size: 25px; }
+
+.nuestras-obras {
+  background-color: black; }
+  .nuestras-obras h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    color: white; }
+  .nuestras-obras div {
+    margin: 10px auto 0;
+    overflow: hidden; }
+    .nuestras-obras div ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: slide 10s infinite alternate ease-in-out; }
+      .nuestras-obras div ul li {
+        width: 100%;
+        list-style: none;
+        position: relative; }
+        .nuestras-obras div ul li img {
+          width: 100%; }
+
+.nuestros-clientes {
+  background-color: black; }
+  .nuestros-clientes h2 {
+    color: white;
+    font-size: 45px;
+    display: flex;
+    justify-content: center; }
+  .nuestros-clientes div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nuestros-clientes div img {
+      height: 600px;
+      margin: 40px;
+      border: 8px solid red; }
+    .nuestros-clientes div p {
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      width: 400px; }
+
+.video {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; }
+  .video div {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    overflow: hidden; }
+    .video div iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0; }
+
+.nosotros {
+  background-color: black;
+  color: white;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 20px; }
+  .nosotros img {
+    height: 500px;
+    border: 8px solid red;
+    grid-column: 2/5;
+    grid-row: 2/5; }
+  .nosotros h2 {
+    font-size: 45px;
+    grid-column: 5/8;
+    grid-row: 2/3; }
+  .nosotros p {
+    font-size: 20px;
+    grid-column: 6/10;
+    grid-row: 3/4;
+    height: auto; }
+  .nosotros a {
+    display: block;
+    padding: 5px;
+    background-color: grey;
+    text-align: center;
+    border-radius: 5px;
+    grid-column: 7/9;
+    grid-row: 4;
+    width: 150px;
+    height: 40px; }
+    .nosotros a:hover {
+      background-color: red; }
+
+.nuestros-proyectos {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: 800px; }
+  .nuestros-proyectos .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .nuestros-proyectos h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px; }
+  .nuestros-proyectos .honda-civic {
+    width: 300px;
+    border: 8px solid red;
+    text-align: center; }
+    .nuestros-proyectos .honda-civic img {
+      width: 100%; }
+    .nuestros-proyectos .honda-civic p {
+      width: 250px; }
+    .nuestros-proyectos .honda-civic a {
+      padding: 5px;
+      background-color: grey;
+      border-radius: 5px;
+      height: 40px; }
+      .nuestros-proyectos .honda-civic a:hover {
+        background-color: red; }
+  .nuestros-proyectos .mazda-rx7 {
+    width: 300px;
+    border: 8px solid red;
+    text-align: center; }
+    .nuestros-proyectos .mazda-rx7 img {
+      width: 100%; }
+    .nuestros-proyectos .mazda-rx7 p {
+      width: 250px; }
+    .nuestros-proyectos .mazda-rx7 a {
+      padding: 5px;
+      background-color: grey;
+      border-radius: 5px;
+      height: 40px; }
+      .nuestros-proyectos .mazda-rx7 a:hover {
+        background-color: red; }
+
+.resenas-pages {
+  background-color: black;
+  color: white;
+  text-align: center; }
+  .resenas-pages .resena-carlos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px; }
+  .resenas-pages div p {
+    width: 300px; }
+
+.formulario {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; }
+  .formulario div {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px rgba(219, 16, 16, 0.738);
+    padding: 20px; }
+    .formulario div h2 {
+      text-align: center;
+      padding-bottom: 15px; }
+    .formulario div label {
+      padding-bottom: 10px;
+      font-weight: 700; }
+    .formulario div .boton-formulario {
+      margin-top: 8px; }
+
+footer {
+  background-color: #3a3838;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; }
+  footer .contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px; }
+    footer .contenido-footer div img {
+      max-width: 100px;
+      margin-bottom: 5px; }
+    footer .contenido-footer .redes-sociales {
+      display: flex; }
+      footer .contenido-footer .redes-sociales div ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        justify-content: center; }
+        footer .contenido-footer .redes-sociales div ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+          margin: 10px; }
+          footer .contenido-footer .redes-sociales div ul li a:hover {
+            filter: brightness(0) invert(1); }
+
+@media screen and (max-width: 991px) {
+  header {
+    height: 80vh; }
+  header .seccion-header h2 {
+    display: none; } }
+
+@media screen and (max-width: 925px) {
+  .nosotros {
+    height: 700px; }
+  .nosotros img {
+    height: 400px;
+    margin-top: 80px; }
+  .nosotros h2 {
+    font-size: 40px; }
+  .nosotros p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 850px) {
+  .nuestros-clientes div {
+    display: flex;
+    flex-direction: column; }
+  .nuestros-clientes div img {
+    height: 400px; }
+  .nuestros-clientes div p {
+    font-size: 25px; } }
+
+@media screen and (max-width: 830px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nosotros img {
+    margin-top: 0;
+    width: 300px;
+    height: 400px; }
+  .nosotros h2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 760px) {
+  .bienvenidos p {
+    font-size: 20px; }
+  .resenas-pages .resena-carlos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .resenas-pages .resena-carlos div p {
+    width: 100%; } }
+
+@media screen and (max-width: 660px) {
+  .mazda-rx7 {
+    display: none; } }
+
+@media screen and (max-width: 590px) {
+  .nuestras-obras h2 {
+    font-size: 30px;
+    padding-top: 5px; }
+  .nuestros-clientes h2 {
+    font-size: 30px;
+    padding-top: 5px; } }
+
+@media screen and (max-width: 560px) {
+  .nosotros img {
+    width: 250px;
+    height: 350px; }
+  .nosotros h2 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 520px) {
+  .contenido-footer {
+    display: flex;
+    flex-direction: column; }
+  .contenido-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contenido-footer .redes-sociales div ul {
+    display: flex; }
+  .contenido-footer .redes-sociales div ul li {
+    margin: 10px; } }
+
+@media screen and (max-width: 450px) {
+  .nuestros-clientes div img {
+    height: 250px; }
+  .nuestros-clientes div p {
+    font-size: 20px;
+    width: 300px; } }
+
+@media screen and (max-width: 413px) {
+  .bienvenidos {
+    height: 300px; }
+  .bienvenidos h2 {
+    padding: 10px; }
+  .bienvenidos p {
+    font-size: 15px; }
+  .resenas-pages .resena-carlos img {
+    width: 80%; } }
+
+@media screen and (max-width: 390px) {
+  .nosotros img {
+    height: 300px; }
+  .nosotros h2 {
+    font-size: 18px;
+    padding: 2px; }
+  .formulario div {
+    width: 80%; } }
+
+@media screen and (max-width: 350px) {
+  .video div {
+    padding-bottom: 56.25%;
+    height: 0; }
+  .video div iframe {
+    width: 300px;
+    height: 100%; } }

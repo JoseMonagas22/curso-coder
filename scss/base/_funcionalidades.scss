@@ -1,0 +1,22 @@
+//* VARIABLES
+$color-fondo-main: black;
+$color-fondo-footer: rgb(58, 56, 56);
+
+//* LISTAS
+$colores: black, red, white, gray;
+$font: 20px, 25px, 40px, 45px;
+
+//* EXTEND
+
+%enlaces{
+    text-decoration: none;
+    color:white
+}
+
+//*MIXIN-----Se aplico en nuestros proyectos pages
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

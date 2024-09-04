@@ -1,0 +1,165 @@
+@media screen and (max-width: 991px){
+    header {
+        height: 80vh;
+    }
+    
+    header .seccion-header h2 {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 925px){
+    .nosotros {
+        height: 700px;
+    }
+    .nosotros img {
+        height: 400px;
+        margin-top: 80px;
+    }
+    .nosotros h2 {
+        font-size: 40px;
+    }
+    .nosotros p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .nuestros-clientes div {
+        display: flex;
+        flex-direction: column;
+    }
+    .nuestros-clientes div img{
+        height: 400px;
+    }
+    .nuestros-clientes div p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros img {
+        margin-top: 0;
+        width: 300px;
+        height: 400px;
+
+    }
+    .nosotros h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .bienvenidos p{
+        font-size: 20px;
+    }
+    .resenas-pages .resena-carlos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resenas-pages .resena-carlos div p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .mazda-rx7{ 
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .nuestras-obras h2{
+        font-size: 30px;
+        padding-top: 5px;
+    }
+    .nuestros-clientes h2{
+        font-size: 30px;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .nosotros img {
+        width: 250px;
+        height: 350px;
+    }
+    .nosotros h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido-footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-footer .redes-sociales div ul {
+        display: flex;
+    }
+    .contenido-footer .redes-sociales div ul li {
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .nuestros-clientes div img {
+        height: 250px;
+    }
+    .nuestros-clientes div p{
+        font-size: 20px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .bienvenidos {
+        height: 300px;
+
+    }
+    .bienvenidos h2{
+        padding: 10px;
+    }
+    .bienvenidos p{
+        font-size: 15px;
+    }
+    .resenas-pages .resena-carlos img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .nosotros img {
+        height: 300px;
+    }
+    .nosotros h2{
+        font-size: 18px;
+        padding: 2px;
+    }
+    .formulario div{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .video div{
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+    .video div iframe {
+        width: 300px;
+        height: 100%;
+    }
+}
