@@ -5,7 +5,11 @@
     
     header .seccion-header h2 {
         display: none;
-    }  
+    }
+    
+    .tarjeta-subaru{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 925px){
@@ -21,6 +25,9 @@
     }
     .nosotros p {
         font-size: 15px;
+    }
+    .formulario .maps{
+        display: none;
     }
 }
 
@@ -69,7 +76,7 @@
 }
 
 @media screen and (max-width: 660px){
-    .mazda-rx7{ 
+    .tarjeta-mazda{ 
         display: none;
     }
 }

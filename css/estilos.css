@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-.nosotros a, .nuestros-proyectos .honda-civic a, .nuestros-proyectos .mazda-rx7 a {
+.nosotros a, .nuestros-proyectos .tarjeta-honda a, .nuestros-proyectos .tarjeta-mazda a, .nuestros-proyectos .tarjeta-subaru a, .formulario div .boton-formulario {
   text-decoration: none;
   color: white; }
 
@@ -187,35 +187,50 @@ header {
     text-align: center;
     font-size: 40px;
     margin-bottom: 30px; }
-  .nuestros-proyectos .honda-civic {
+  .nuestros-proyectos .tarjeta-honda {
     width: 300px;
     border: 8px solid red;
     text-align: center; }
-    .nuestros-proyectos .honda-civic img {
+    .nuestros-proyectos .tarjeta-honda img {
       width: 100%; }
-    .nuestros-proyectos .honda-civic p {
+    .nuestros-proyectos .tarjeta-honda p {
       width: 250px; }
-    .nuestros-proyectos .honda-civic a {
+    .nuestros-proyectos .tarjeta-honda a {
       padding: 5px;
       background-color: grey;
       border-radius: 5px;
       height: 40px; }
-      .nuestros-proyectos .honda-civic a:hover {
+      .nuestros-proyectos .tarjeta-honda a:hover {
         background-color: red; }
-  .nuestros-proyectos .mazda-rx7 {
+  .nuestros-proyectos .tarjeta-mazda {
     width: 300px;
     border: 8px solid red;
     text-align: center; }
-    .nuestros-proyectos .mazda-rx7 img {
+    .nuestros-proyectos .tarjeta-mazda img {
       width: 100%; }
-    .nuestros-proyectos .mazda-rx7 p {
+    .nuestros-proyectos .tarjeta-mazda p {
       width: 250px; }
-    .nuestros-proyectos .mazda-rx7 a {
+    .nuestros-proyectos .tarjeta-mazda a {
       padding: 5px;
       background-color: grey;
       border-radius: 5px;
       height: 40px; }
-      .nuestros-proyectos .mazda-rx7 a:hover {
+      .nuestros-proyectos .tarjeta-mazda a:hover {
+        background-color: red; }
+  .nuestros-proyectos .tarjeta-subaru {
+    width: 300px;
+    border: 8px solid red;
+    text-align: center; }
+    .nuestros-proyectos .tarjeta-subaru img {
+      width: 100%; }
+    .nuestros-proyectos .tarjeta-subaru p {
+      width: 250px; }
+    .nuestros-proyectos .tarjeta-subaru a {
+      padding: 5px;
+      background-color: grey;
+      border-radius: 5px;
+      height: 40px; }
+      .nuestros-proyectos .tarjeta-subaru a:hover {
         background-color: red; }
 
 .resenas-pages {
@@ -233,14 +248,14 @@ header {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 80vh; }
   .formulario div {
     display: flex;
     flex-direction: column;
     width: 350px;
-    border: 1px solid transparent;
+    border: 5px solid transparent;
     box-shadow: 0 0 15px rgba(219, 16, 16, 0.738);
     padding: 20px; }
     .formulario div h2 {
@@ -250,7 +265,20 @@ header {
       padding-bottom: 10px;
       font-weight: 700; }
     .formulario div .boton-formulario {
-      margin-top: 8px; }
+      margin-top: 8px;
+      padding: 5px;
+      background-color: grey;
+      border-radius: 5px;
+      height: 40px; }
+      .formulario div .boton-formulario:hover {
+        background-color: red; }
+  .formulario .maps {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px rgba(219, 16, 16, 0.738);
+    padding: 20px; }
 
 footer {
   background-color: #3a3838;
@@ -287,6 +315,8 @@ footer {
   header {
     height: 80vh; }
   header .seccion-header h2 {
+    display: none; }
+  .tarjeta-subaru {
     display: none; } }
 
 @media screen and (max-width: 925px) {
@@ -298,7 +328,9 @@ footer {
   .nosotros h2 {
     font-size: 40px; }
   .nosotros p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .formulario .maps {
+    display: none; } }
 
 @media screen and (max-width: 850px) {
   .nuestros-clientes div {
@@ -332,7 +364,7 @@ footer {
     width: 100%; } }
 
 @media screen and (max-width: 660px) {
-  .mazda-rx7 {
+  .tarjeta-mazda {
     display: none; } }
 
 @media screen and (max-width: 590px) {
